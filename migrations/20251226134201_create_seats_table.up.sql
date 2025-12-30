@@ -1,0 +1,8 @@
+CREATE TABLE seats (
+  id BIGSERIAL PRIMARY KEY,
+  flight_id BIGINT NOT NULL,
+  seat_number VARCHAR(10) NOT NULL,
+  status VARCHAR(20) NOT NULL DEFAULT 'AVAILABLE',
+  locked_until TIMESTAMP,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);

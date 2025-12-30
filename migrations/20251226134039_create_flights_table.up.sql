@@ -1,0 +1,6 @@
+CREATE TABLE flights (
+  id BIGSERIAL PRIMARY KEY,
+  code VARCHAR(50) NOT NULL,
+  departure_time TIMESTAMP NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
