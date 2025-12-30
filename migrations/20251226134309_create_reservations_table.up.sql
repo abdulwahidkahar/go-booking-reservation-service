@@ -2,6 +2,7 @@ CREATE TABLE reservations (
   id BIGSERIAL PRIMARY KEY,
   user_id BIGINT NOT NULL,
   flight_id BIGINT NOT NULL,
+  seat_id BIGINT NOT NULL,
   status VARCHAR(20) NOT NULL,
   expires_at TIMESTAMP NOT NULL,
   created_at TIMESTAMP NOT NULL DEFAULT NOW()
